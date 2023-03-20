@@ -1,0 +1,37 @@
+.nav-menu__items {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  white-space: nowrap;
+  height: auto;
+  margin-bottom: 24px;
+  padding-left: 18px;
+  list-style-type: none;
+}
+.nav-menu__item {
+  font-family: 'TT Lakes Regular';
+  padding: 8px 13px 8px 13px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.nav-menu__item a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav-menu__item:hover {
+  box-sizing: border-box;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  background: #fff;
+}
+@media (min-width: 1120px) {
+  .nav-menu__items {
+    flex-wrap: wrap;
+  }
+}

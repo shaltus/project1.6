@@ -1,0 +1,38 @@
+.readMore {
+  position: relative;
+  width: 100px;
+  height: 24px;
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-left: 48px;
+  margin-bottom: 16px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.readMore::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 10px;
+  background-image: url(../img/icon.svg);
+  left: -17px;
+  top: 7px;
+  transition: all 0.2s ease;
+}
+.readMore--hide {
+  margin-top: 10px;
+}
+.readMore--hide::before {
+  left: 0px;
+  transform: rotate(180deg);
+}
+@media (min-width: 768px) {
+  .readMore {
+    margin-top: 10px;
+  }
+}

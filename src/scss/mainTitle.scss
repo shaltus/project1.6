@@ -1,0 +1,32 @@
+.main-title {
+  display: flex;
+}
+.main-title__text {
+  position: relative;
+  align-items: center;
+  font-family: 'TT Lakes Bold';
+  height: 40px;
+  width: 288px;
+  font-size: 28px;
+  letter-spacing: -0.6px;
+  margin-left: 12px;
+}
+.main-title__text:before {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 40px;
+  left: -12px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background-color: #41f6d7;
+}
+@media (min-width: 1120px) {
+  .main-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-title__btn {
+    margin-left: 10px;
+  }
+}
