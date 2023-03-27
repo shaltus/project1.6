@@ -15,14 +15,19 @@
   height: auto;
 }
 .main-content__text--full {
-  height: 290px;
+  height: 244px;
+}
+.main-content__image {
+  margin-bottom: 16px;
 }
 
 @media (min-width: 768px) {
   .main-content {
     display: flex;
     flex-direction: row;
-    column-gap: 36px;
+  }
+  .main-content__about-us {
+    padding-left: 16px;
   }
   .main-content__text {
     min-width: 312px;
@@ -30,11 +35,11 @@
     height: 135px;
   }
   .main-content__text--full {
-    height: 173px;
+    height: 168px;
   }
-  .main-content__about-us {
-    padding-left: 25px;
-  }
+  // .main-content__about-us {
+  //   padding-left: 16px;
+  // }
 
   .main-content__logo {
     border-radius: 5px;
@@ -51,6 +56,6 @@
     width: 530px;
   }
   .main-content__text--full {
-    height: 230px;
+    height: 160px;
   }
 }

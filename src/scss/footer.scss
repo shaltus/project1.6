@@ -1,0 +1,30 @@
+.footer {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #7e7e82;
+  padding: 16px;
+  border-top: 1px solid #d9fff5;
+  margin: 0;
+}
+.footer__item {
+  font-family: 'TT Lakes Medium';
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.footer__item {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-left: 0;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,159 @@
+.brands-price__item:nth-child(1) {
+  display: none;
+}
+.brands-price__header {
+  height: auto;
+  border-top: 1px solid #d9fff5;
+}
+.brands-price__header-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: #7e7e82;
+  display: flex;
+  background: linear-gradient(-270deg, #f8f8f8 0%, #ffffff 98.61%);
+  padding: 16px 16px 16px 28px;
+  margin: 0;
+}
+
+.brands-price__btn {
+  width: 119px;
+  height: 32px;
+  color: aliceblue;
+  background-color: #ff3e79;
+  border-radius: 16px;
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  padding: 0px 10px 0px 15px;
+  width: 119px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: -0.15px;
+  font-weight: bold;
+  border: none;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+.brands-price__btn:hover {
+  opacity: 0.6;
+}
+.brands-price__img {
+  width: 7px;
+  height: 9px;
+  background: url('../img/drop.svg');
+  margin-bottom: 2px;
+}
+.brands-price__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  padding: 16px;
+  height: 200px;
+
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background: white;
+}
+.brands-price__list {
+  box-sizing: border-box;
+  margin-left: 16px;
+  padding-left: 0px;
+  list-style-type: none;
+}
+.brands-price__card p {
+  margin: 0;
+}
+
+.brands-price__title {
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.72;
+}
+.brands-price__desc {
+  font-size: 14px;
+  line-height: 16px;
+}
+.swiper-pagination {
+  position: relative;
+}
+// .brands-price__item {
+//   // min-width: 260px;
+//   margin-right: 16px;
+// }
+@media (max-width: 767px) {
+  .brands-price__card {
+    grid-column: 1/3;
+  }
+  .brands-price__card:nth-child(3) {
+    grid-column: 1/2;
+  }
+  .brands-price__card:nth-child(4) {
+    grid-column: 2/3;
+    align-self: center;
+  }
+}
+@media (min-width: 768px) {
+  .brands-price__list {
+    display: grid;
+    gap: 0px;
+    margin: 24px;
+    width: auto;
+  }
+  .brands-price__item {
+    position: relative;
+  }
+  .brands-price__item:not(:first-child):not(:last-child):after {
+    content: '';
+    position: absolute;
+    left: 2%;
+    bottom: 0;
+    width: 96%;
+    height: 1px;
+    background: #eaeaea;
+  }
+  .brands-price__section {
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: 3.2fr repeat(3, 1fr);
+    box-sizing: border-box;
+    width: 100%;
+    height: 65px;
+    border-radius: 0;
+    border: none;
+  }
+  .brands-price__title {
+    display: none;
+  }
+  .brands-price__item:first-child {
+    display: block;
+  }
+  .brands-price__item:first-child .brands-price__section {
+    background: #f8f8f8;
+    color: #7e7e82;
+    line-height: 16px;
+  }
+}
+.brands-price__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 16px;
+}
+.brands-price__footer-link {
+  display: flex;
+  font-family: 'TT Lakes Medium';
+  gap: 10px;
+  margin-bottom: 45px;
+  font-weight: 500;
+  color: #1b1c21;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.brands-price__footer-link:after {
+  content: url('../img/dropdown.svg');
+}

@@ -1,0 +1,116 @@
+.tech-repair {
+  max-width: 100vw;
+  min-width: 320px;
+  background: #f8f8f8;
+}
+.tech-repair__header {
+  height: auto;
+  border-top: 1px solid #d9fff5;
+}
+.tech-repair__header-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: #7e7e82;
+  display: flex;
+  background: linear-gradient(-270deg, #f8f8f8 0%, #ffffff 98.61%);
+  padding: 16px;
+  margin: 0;
+}
+.tech-repair__list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  padding-left: 0px;
+}
+.tech-repair__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+  height: 160px;
+  background-color: white;
+  margin-top: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+.tech-repair__item:last-child {
+  margin-right: 16px;
+}
+.tech-repair__button {
+  align-self: flex-end;
+}
+.tech-repair__text {
+  align-self: flex-start;
+  margin: 10px 0px 0px 10px;
+}
+.tech-repair__button:hover {
+  box-shadow: 0px 0px 2px 1px #ff3e79;
+}
+.tech-repair__button:focus {
+  box-shadow: inset 0px 0px 2px 1px #ff3e79;
+}
+.tech-repair__all {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tech-repair {
+    height: 278px;
+    overflow: hidden;
+  }
+  .tech-open {
+    height: 632px;
+  }
+  .tech-repair__header-text {
+    padding-left: 24px;
+  }
+  .tech-repair__list {
+    flex-wrap: wrap;
+    margin-left: 24px;
+  }
+  .tech-repair__item {
+    display: flex;
+    margin-top: 24px;
+    width: auto;
+    margin-right: 24px;
+  }
+  .tech-repair__all {
+    display: flex;
+    align-items: center;
+    font-family: 'TTLakes Regular';
+    border: none;
+    padding-left: 60px;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  .tech-repair__all span {
+    margin-left: 17px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+  }
+}
+@media (min-width: 1120px) {
+  .tech-open {
+    height: 456px;
+  }
+  .tech-repair__list {
+    margin-left: 32px;
+  }
+  .tech-repair__header-text {
+    padding-left: 28px;
+  }
+  .tech-repair__item {
+    display: flex;
+    max-width: 240px;
+    margin-right: 32px;
+  }
+  .tech-repair__all {
+    margin-left: 39px;
+  }
+}

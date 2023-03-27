@@ -20,6 +20,11 @@
   transform: matrix(-1, 0, 0, 1, 0, 0);
   background-color: #41f6d7;
 }
+@media (min-width: 768px) {
+  .main-title__text {
+    padding-left: 12px;
+  }
+}
 @media (min-width: 1120px) {
   .main-title {
     display: flex;

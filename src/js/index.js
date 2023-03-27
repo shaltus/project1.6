@@ -1,4 +1,6 @@
 import '../scss/style.scss'
-import './script.js'
-
+import './swiper.js'
+import './modal.js'
+import './readMore.js'
+import './menu.js'
 console.log('Works!')

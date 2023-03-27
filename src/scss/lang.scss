@@ -1,0 +1,21 @@
+.lang {
+  display: flex;
+  column-gap: 7px;
+  font-size: 16px;
+}
+.lang__btn {
+  text-transform: uppercase;
+  font-family: 'TT Lakes';
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  color: #1b1c21;
+  transition: all 0.3s ease;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.lang__btn:hover {
+  opacity: 0.6;
+}

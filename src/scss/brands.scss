@@ -1,0 +1,125 @@
+.brands {
+  max-width: 100vw;
+  min-width: 320px;
+  background: #f8f8f8;
+}
+
+.brands__header {
+  height: auto;
+  border-top: 1px solid #d9fff5;
+}
+.brands__header-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: #7e7e82;
+  display: flex;
+  background: linear-gradient(-270deg, #f8f8f8 0%, #ffffff 98.61%);
+  padding: 16px;
+  margin: 0;
+}
+.brands__list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  padding-left: 0px;
+}
+.brands__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+  background-color: white;
+  margin-top: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+.brands__item:last-child {
+  margin-right: 16px;
+}
+.brands__item img {
+  padding-left: 16px;
+}
+.brands-button {
+  background: url(../img/dropdown.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin: 16px;
+  border: 2px solid deeppink;
+  border-radius: 20px;
+  background-position: center;
+  cursor: pointer;
+}
+.brands-button:hover {
+  box-shadow: 0px 0px 2px 1px #ff3e79;
+}
+.brands-button:focus {
+  box-shadow: inset 0px 0px 2px 1px #ff3e79;
+}
+.brands__all {
+  display: none;
+}
+@media (min-width: 768px) {
+  .brands {
+    height: 290px;
+    overflow: hidden;
+  }
+  .brands--open {
+    height: 500px;
+  }
+
+  .brands__list {
+    flex-wrap: wrap;
+    margin-left: 24px;
+  }
+  .brands__item {
+    display: flex;
+    margin-top: 24px;
+    margin-right: 24px;
+  }
+
+  .brands__header-text {
+    padding-left: 24px;
+  }
+  .brands__all {
+    display: flex;
+    align-items: center;
+    font-family: 'TTLakes Regular';
+    border: none;
+    padding-left: 60px;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  .brands__all span {
+    margin-left: 17px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+  }
+}
+@media (min-width: 1120px) {
+  .brands--open {
+    height: 400px;
+  }
+  .brands__list {
+    margin-left: 0px;
+    margin-left: 32px;
+  }
+  .brands__header-text {
+    padding-left: 28px;
+  }
+  .brands__item {
+    display: flex;
+    max-width: 240px;
+    margin-right: 32px;
+  }
+  .brands__all {
+    margin-left: 39px;
+  }
+}

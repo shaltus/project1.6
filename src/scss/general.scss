@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: 'TT Lakes Regular';
+  background: #f8f8f8;
+}
