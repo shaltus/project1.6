@@ -284,7 +284,9 @@
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
   transform: translateX(-150%);
   transition: all 0.3s ease;
-  z-index: 10; }
+  z-index: 10;
+  overflow-y: auto;
+  max-height: 100vh; }
 
 .aside--active {
   transform: translateX(0%); }
@@ -923,6 +925,10 @@
   min-width: 320px;
   width: 1120px;
   z-index: 1; }
+
+.content--no-scroll {
+  height: 100vh;
+  overflow: hidden; }
 
 @media (min-width: 1120px) {
   .content {
